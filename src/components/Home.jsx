@@ -1,7 +1,7 @@
 // Home.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import profilePhoto from "./assets/profile photo.png";
+import profilePhoto from "./assets/profile-photo.png";
 
 const Home = () => {
   return (
