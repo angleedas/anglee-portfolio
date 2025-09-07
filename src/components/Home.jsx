@@ -1,7 +1,7 @@
 // Home.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import profilePhoto from "./assets/profile-photo.png";
+
 
 const Home = () => {
   return (
@@ -32,7 +32,7 @@ const Home = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src={profilePhoto}
+          src= "public/assets/profile-photo.png"
           alt="Profileimg"
           className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-blue-600"
         />
