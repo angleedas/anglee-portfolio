@@ -3,21 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react()],
-  base: "/portfolio/", 
-
+  base: '/anglee-portfolio/',
+  plugins: [react()], 
+  base: '/anglee-portfolio/', //base: '/anglee-portfolio/',
 })
-// export default defineConfig({
-//   plugins: [react(), tailwindcss()],
-// })
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,jsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },https://api.web3forms.com/submit
-//   plugins: [],
-// }
