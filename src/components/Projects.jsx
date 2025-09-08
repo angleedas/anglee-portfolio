@@ -2,10 +2,10 @@
 import React from "react";
 
 const projects = [
-  { type: 'video', src: "public/assets/video2.mp4", desc: 'A fun Flappy Bird clone built with HTML, CSS, and JavaScript where players control a bird and navigate through moving pipes. The game features smooth animations, scoring, and game-over mechanics for an engaging experience.', reverse: false },
-  { type: 'video', src: "public/assets/video1.mp4", desc: 'A simple calculator built with HTML, CSS, and JavaScript that performs basic arithmetic operations. It provides a clean interface with responsive design for quick and easy calculations.', reverse: true },
-  { type: 'image', src: "public/assets/image1.jpeg", desc: 'A fun Rock, Paper, Scissors game built with HTML, CSS, and JavaScript where players compete against the computer. The game includes real-time results, score tracking, and an interactive UI.', reverse: false },
-  { type: 'image', src: "public/assets/image2.jpeg", desc: 'A dynamic solar system simulation built with HTML, CSS, and JavaScript, featuring orbiting planets and stars. This project visually demonstrates planetary motion with smooth animations for an engaging space experience.', reverse: true },
+  { type: 'video', src: "/anglee-portfolio/assets/video2.mp4", desc: 'A fun Flappy Bird clone built with HTML, CSS, and JavaScript where players control a bird and navigate through moving pipes. The game features smooth animations, scoring, and game-over mechanics for an engaging experience.', reverse: false },
+  { type: 'video', src: "/anglee-portfolio/assets/video1.mp4", desc: 'A simple calculator built with HTML, CSS, and JavaScript that performs basic arithmetic operations. It provides a clean interface with responsive design for quick and easy calculations.', reverse: true },
+  { type: 'image', src: "/anglee-portfolio/assets/image1.jpeg", desc: 'A fun Rock, Paper, Scissors game built with HTML, CSS, and JavaScript where players compete against the computer. The game includes real-time results, score tracking, and an interactive UI.', reverse: false },
+  { type: 'image', src: "/anglee-portfolio/assets/image2.jpeg", desc: 'A dynamic solar system simulation built with HTML, CSS, and JavaScript, featuring orbiting planets and stars. This project visually demonstrates planetary motion with smooth animations for an engaging space experience.', reverse: true },
 ];
 
 const Projects = () => (
