@@ -1,11 +1,34 @@
-// components/Projects.js
-import React from "react";
+ import React from "react";
 
 const projects = [
-  { type: 'video', src: "/anglee-portfolio/assets/video2.mp4", desc: 'A fun Flappy Bird clone built with HTML, CSS, and JavaScript where players control a bird and navigate through moving pipes. The game features smooth animations, scoring, and game-over mechanics for an engaging experience.', reverse: false },
-  { type: 'video', src: "/anglee-portfolio/assets/video1.mp4", desc: 'A simple calculator built with HTML, CSS, and JavaScript that performs basic arithmetic operations. It provides a clean interface with responsive design for quick and easy calculations.', reverse: true },
-  { type: 'image', src: "/anglee-portfolio/assets/image1.jpeg", desc: 'A fun Rock, Paper, Scissors game built with HTML, CSS, and JavaScript where players compete against the computer. The game includes real-time results, score tracking, and an interactive UI.', reverse: false },
-  { type: 'image', src: "/anglee-portfolio/assets/image2.jpeg", desc: 'A dynamic solar system simulation built with HTML, CSS, and JavaScript, featuring orbiting planets and stars. This project visually demonstrates planetary motion with smooth animations for an engaging space experience.', reverse: true },
+  { 
+    type: 'video', 
+    src: "/anglee-portfolio/assets/video2.mp4", 
+    desc: 'A fun Flappy Bird clone built with HTML, CSS, and JavaScript where players control a bird and navigate through moving pipes.', 
+    reverse: false,
+    link: "https://github.com/yourusername/dashboard-app" 
+  },
+  { 
+    type: 'video', 
+    src: "/anglee-portfolio/assets/video1.mp4", 
+    desc: 'A simple calculator built with HTML, CSS, and JavaScript.', 
+    reverse: true,
+    link: "https://github.com/yourusername/calculator-app"
+  },
+  { 
+    type: 'image', 
+    src: "/anglee-portfolio/assets/image1.jpeg", 
+    desc: 'A fun Rock, Paper, Scissors game built with HTML, CSS, and JavaScript.', 
+    reverse: false,
+    link: "https://github.com/yourusername/rps-game"
+  },
+  { 
+    type: 'image', 
+    src: "/anglee-portfolio/assets/image2.jpeg", 
+    desc: 'A dynamic solar system simulation built with HTML, CSS, and JavaScript.', 
+    reverse: true,
+    link: "https://github.com/yourusername/solar-system-simulation"
+  },
 ];
 
 const Projects = () => (
@@ -23,7 +46,17 @@ const Projects = () => (
           )}
         </div>
         <div className="md:w-1/2 md:px-6 mt-4 md:mt-0">
-          <p className="text-gray-700 text-sm">{proj.desc}</p>
+          <p className="text-gray-700 text-sm mb-2">{proj.desc}</p>
+          {proj.link && (
+            <a 
+              href={proj.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              View Project
+            </a>
+          )}
         </div>
       </div>
     ))}
@@ -31,4 +64,3 @@ const Projects = () => (
 );
 
 export default Projects;
-

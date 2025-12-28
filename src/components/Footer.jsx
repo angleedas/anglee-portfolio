@@ -1,24 +1,4 @@
-//  import React from 'react';
-// import { FaLinkedin } from 'react-icons/fa';
 
-// const Footer = () => (
-//   <footer className="bg-{ #111439 } py-6 px-4 text-center">
-//     <p className="text-sm text-gray-600">© 2025 Anglee Bhagwan Das. All rights reserved.</p>
-//     <div className="mt-2 flex justify-center">
-//       <a
-//         href="https://www.linkedin.com/in/your-profile-link"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//         className="text-blue-700 hover:text-blue-900"
-//       >
-//         <FaLinkedin size={24} />
-//       </a>
-//     </div>
-//   </footer>
-// );
-
-// export default Footer;
-// Footer.jsx
 import React from "react";
 
 const Footer = () => {
