@@ -1,32 +1,33 @@
- // src/components/Projects.jsx
-import React from "react";
+ import React from "react";
 
 const projects = [
+  // 🚀 React Dashboard project appears on top
   { 
-    desc: 'A dynamic dashboard web app built with React and Vite, featuring user authentication, analytics, and interactive data visualization. Fully responsive and deployed on GitHub Pages for live access.',
-    reverse: false,
+    desc: 'A dynamic dashboard web app built with React, Vite, Tailwind CSS, React Router, and Recharts. Fully responsive, interactive data visualization, and deployed on GitHub Pages for live access.',
     link: "https://angleedas.github.io/dashboard-app/"
   },
+
+  // Existing projects
   { 
     type: 'video', 
     src: "/anglee-portfolio/assets/video1.mp4", 
     desc: 'A simple calculator built with HTML, CSS, and JavaScript.',
     reverse: true,
-    link: "https://github.com/yourusername/calculator-app" // replace with live link if deployed
+    link: "https://github.com/yourusername/calculator-app"
   },
   { 
     type: 'image', 
     src: "/anglee-portfolio/assets/image1.jpeg", 
     desc: 'A fun Rock, Paper, Scissors game built with HTML, CSS, and JavaScript.',
     reverse: false,
-    link: "https://github.com/yourusername/rps-game" // replace with live link if deployed
+    link: "https://github.com/yourusername/rps-game"
   },
   { 
     type: 'image', 
     src: "/anglee-portfolio/assets/image2.jpeg", 
     desc: 'A dynamic solar system simulation built with HTML, CSS, and JavaScript.',
     reverse: true,
-    link: "https://github.com/yourusername/solar-system-simulation" // replace with live link if deployed
+    link: "https://github.com/yourusername/solar-system-simulation"
   },
 ];
 
@@ -35,28 +36,21 @@ const Projects = () => (
     <h2 className="text-2xl font-bold mb-6">Projects</h2>
     {projects.map((proj, idx) => (
       <div key={idx} className={`flex flex-col md:flex-row ${proj.reverse ? 'md:flex-row-reverse' : ''} items-center mb-10`}>
-        <div className="md:w-1/2">
-          {proj.link ? (
-            <a href={proj.link} target="_blank" rel="noopener noreferrer">
-              {proj.type === 'video' ? (
-                <video controls className="w-full rounded-lg shadow">
-                  <source src={proj.src} type="video/mp4" />
-                </video>
-              ) : (
-                <img src={proj.src} alt={`Project ${idx + 1}`} className="w-full rounded-lg shadow" />
-              )}
-            </a>
-          ) : (
-            proj.type === 'video' ? (
+        
+        {/* Render media only if type exists */}
+        {proj.type && (
+          <div className="md:w-1/2">
+            {proj.type === 'video' ? (
               <video controls className="w-full rounded-lg shadow">
                 <source src={proj.src} type="video/mp4" />
               </video>
             ) : (
               <img src={proj.src} alt={`Project ${idx + 1}`} className="w-full rounded-lg shadow" />
-            )
-          )}
-        </div>
-        <div className="md:w-1/2 md:px-6 mt-4 md:mt-0">
+            )}
+          </div>
+        )}
+
+        <div className={`md:w-1/2 md:px-6 mt-4 md:mt-0 ${!proj.type ? 'w-full' : ''}`}>
           <p className="text-gray-700 text-sm mb-2">{proj.desc}</p>
           {proj.link && (
             <a 
