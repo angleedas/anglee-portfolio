@@ -5,9 +5,14 @@ const projects = [
   // 🚀 React Dashboard project appears on top
   { 
     desc: 'A dynamic dashboard web app built with React, Vite, Tailwind CSS, React Router, and Recharts. Fully responsive, interactive data visualization, and deployed on GitHub Pages for live access.',
+
     link: "https://angleedas.github.io/App-Dashboard/",
      
  },
+{
+    link: "https://angleedas.github.io/dashboard-app/"
+},
+
 
   // Existing projects
   { 
@@ -70,4 +75,6 @@ const Projects = () => (
   </section>
 );
 
+
 export default Projects;
+
